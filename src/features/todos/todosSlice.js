@@ -43,6 +43,7 @@ const todosSlice = createSlice({
     },
   },
 });
+console.log('todosSlice.reducer: ', todosSlice.reducer);
 
 export const {
   todoAdded,
@@ -52,7 +53,7 @@ export const {
   filterChanged,
 } = todosSlice.actions;
 
-export const selectTodos = (state) => state.todos.items;
+// export const selectTodos = (state) => state.todos.items;
 export const selectFilter = (state) => state.todos.filter;
 
 export const selectFilteredTodos = (state) => {
