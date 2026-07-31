@@ -1,0 +1,159 @@
+.todo {
+  width: min(100%, 420px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.todo__header {
+  margin-bottom: 1.5rem;
+}
+
+.todo__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.todo__subtitle {
+  margin: 0.35rem 0 0;
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+.todo__form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo__input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background: #0d1117;
+  color: #e6edf3;
+  font-size: 1rem;
+}
+
+.todo__input:focus {
+  outline: 2px solid #58a6ff;
+  outline-offset: 1px;
+}
+
+.todo__add,
+.todo__remove,
+.todo__filter,
+.todo__clear {
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  background: #21262d;
+  color: #e6edf3;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.todo__add {
+  padding: 0.75rem 1rem;
+  background: #238636;
+  border-color: #238636;
+  font-weight: 600;
+}
+
+.todo__add:hover {
+  background: #2ea043;
+}
+
+.todo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #161b22;
+}
+
+.todo__empty {
+  padding: 1.25rem;
+  color: #8b949e;
+  text-align: center;
+}
+
+.todo__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #30363d;
+}
+
+.todo__item:last-child {
+  border-bottom: none;
+}
+
+.todo__label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo__text--done {
+  color: #8b949e;
+  text-decoration: line-through;
+}
+
+.todo__remove {
+  flex-shrink: 0;
+  padding: 0.35rem 0.65rem;
+}
+
+.todo__remove:hover {
+  background: #da3633;
+  border-color: #da3633;
+}
+
+.todo__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+.todo__filters {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.todo__filter {
+  padding: 0.3rem 0.55rem;
+}
+
+.todo__filter--active {
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+.todo__clear {
+  padding: 0.3rem 0.55rem;
+}
+
+.todo__clear:hover {
+  color: #e6edf3;
+}
